@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:instagramcopy/smooth%20page/page1.dart';
 import 'package:instagramcopy/smooth%20page/page2.dart';
 import 'package:instagramcopy/utils/modal.dart';
@@ -84,7 +85,7 @@ class _UserPostsState extends State<UserPosts> {
                       icon: Transform.scale(
                         scaleX: -1.0,
                         child: Icon(
-                          Icons.chat_bubble_outline_outlined,
+                          FontAwesomeIcons.comment,
                           size: 24,
                         ),
                       ),
