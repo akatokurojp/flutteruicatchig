@@ -86,7 +86,7 @@ class _UserPostsState extends State<UserPosts> {
                         scaleX: -1.0,
                         child: Icon(
                           FontAwesomeIcons.comment,
-                          size: 24,
+                          size: 22,
                         ),
                       ),
                     ),
