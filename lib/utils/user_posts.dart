@@ -4,6 +4,7 @@ import 'package:instagramcopy/smooth%20page/page1.dart';
 import 'package:instagramcopy/smooth%20page/page2.dart';
 import 'package:instagramcopy/utils/modal.dart';
 import 'package:like_button/like_button.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class UserPosts extends StatefulWidget {
   const UserPosts({Key? key}) : super(key: key);
@@ -47,10 +48,27 @@ class _UserPostsState extends State<UserPosts> {
         ),
         Container(
           height: 400,
-          color: Colors.grey[300],
+          child: PageView(
+            controller: _controller,
+            children: [
+              Container(
+                color: Colors.grey[300],
+                child: Center(
+                  child: Text("Page 1"),
+                ),
+              ),
+              Container(
+                color: Colors.grey[300],
+                child: Center(
+                  child: Text("Page 2"),
+                ),
+              ),
+              // Add more containers as needed
+            ],
+          ),
         ),
         Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.only(left: 16, top: 15, bottom: 16),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -73,6 +91,23 @@ class _UserPostsState extends State<UserPosts> {
                     ),
                   ),
                   Icon(CupertinoIcons.paperplane),
+                ],
+              ),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(right: 100.0),
+                    child: SmoothPageIndicator(
+                      controller: _controller,
+                      count: 2, // Number of pages/containers
+                      effect: SlideEffect(
+                        radius: 4.0,
+                        dotWidth: 5.0,
+                        dotHeight: 5.0,
+                      ),
+                      // You can choose different effects
+                    ),
+                  ),
                 ],
               ),
               LikeButton(
