@@ -3,6 +3,7 @@ import 'package:instagramcopy/utils/account_tab1.dart';
 import 'package:instagramcopy/utils/account_tab2.dart';
 import 'package:instagramcopy/utils/account_tab3.dart';
 import 'package:instagramcopy/utils/bubble_stories.dart';
+import 'package:instagramcopy/utils/notifications.dart';
 
 class UserAccount extends StatelessWidget {
   const UserAccount({super.key});
@@ -26,7 +27,14 @@ class UserAccount extends StatelessWidget {
           elevation: 0.0,
           actions: <Widget>[
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          Notifications()), // Replace 'YourNewScreen()' with the actual screen you want to navigate to
+                );
+              },
               icon: const Icon(
                 Icons.notifications_none_outlined,
                 color: Colors.black,
@@ -222,6 +230,7 @@ class UserAccount extends StatelessWidget {
                 ],
               ),
             ),
+
             TabBar(tabs: [
               Tab(
                 icon: Icon(
