@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:instagramcopy/Photos.dart';
 import 'package:instagramcopy/account.dart';
 import 'package:instagramcopy/feed.dart';
+import 'package:instagramcopy/home.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({Key? key}) : super(key: key);
@@ -23,6 +24,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
     UserAccount(),
     Feed(),
     HomeScreen2(),
+    HomepageBeneran(),
   ];
 
   @override

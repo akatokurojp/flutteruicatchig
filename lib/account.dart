@@ -218,19 +218,37 @@ class UserAccount extends StatelessWidget {
               height: 5,
             ),
 
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: .0, vertical: 10),
-              child: Row(
-                children: [
-                  BubbleStories(text: "About"),
-                  BubbleStories(text: "Catalog"),
-                  BubbleStories(text: "Price"),
-                  BubbleStories(text: "Reviews"),
-                  BubbleStories(text: "Location"),
-                ],
-              ),
+            // Padding(
+            //   padding: const EdgeInsets.symmetric(horizontal: .0, vertical: 10),
+            //   child: Row(
+            //     children: [
+            //       BubbleStories(text: "About"),
+            //       BubbleStories(text: "Catalog"),
+            //       BubbleStories(text: "Price"),
+            //       BubbleStories(text: "Reviews"),
+            //       BubbleStories(text: "Location"),
+            //     ],
+            //   ),
+            // ),
+            Column(
+              children: [
+                Container(
+                  height: 130,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      BubbleStories(text: "About"),
+                      BubbleStories(text: "About"),
+                      BubbleStories(text: "About"),
+                      BubbleStories(text: "About"),
+                      BubbleStories(text: "About"),
+                      BubbleStories(text: "About"),
+                      BubbleStories(text: "About"),
+                    ],
+                  ),
+                )
+              ],
             ),
-
             TabBar(tabs: [
               Tab(
                 icon: Icon(
