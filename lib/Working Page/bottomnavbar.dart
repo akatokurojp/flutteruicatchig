@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:instagramcopy/Photos.dart';
-import 'package:instagramcopy/account.dart';
-import 'package:instagramcopy/feed.dart';
-import 'package:instagramcopy/home.dart';
+import 'package:instagramcopy/Working%20Page/Liked.dart';
+import 'package:instagramcopy/Working%20Page/Photos.dart';
+import 'package:instagramcopy/Working%20Page/Search.dart';
+import 'package:instagramcopy/Working%20Page/account.dart';
+import 'package:instagramcopy/Working%20Page/feed.dart';
+import 'package:instagramcopy/Working%20Page/home.dart';
+import 'package:instagramcopy/Working%20Page/story.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({Key? key}) : super(key: key);
@@ -21,10 +24,12 @@ class _BottomNavBarState extends State<BottomNavBar> {
   }
 
   final List<Widget> _pages = [
+    HomepageBeneran(),
+    SearchPage(),
+    StoryBruh(),
+    LikedPage(),
     UserAccount(),
     Feed(),
-    HomeScreen2(),
-    HomepageBeneran(),
   ];
 
   @override

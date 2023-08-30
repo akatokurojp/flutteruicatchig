@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:instagramcopy/feed.dart';
-import 'package:instagramcopy/Photos.dart';
+import 'package:instagramcopy/Working%20Page/feed.dart';
+import 'package:instagramcopy/Working%20Page/Photos.dart';
 
-import 'bottomnavbar.dart';
+import 'Working Page/bottomnavbar.dart';
 
 void main() {
   runApp(const MyApp());

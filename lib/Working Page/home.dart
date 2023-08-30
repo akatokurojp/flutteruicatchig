@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:instagramcopy/utils/Postingan.dart';
 import 'package:instagramcopy/utils/bubble_stories.dart';
@@ -49,10 +50,7 @@ class HomepageBeneran extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {},
-            icon: const Icon(
-              Icons.notifications_none_outlined,
-              color: Colors.black,
-            ),
+            icon: const Icon(CupertinoIcons.paperplane, color: Colors.black),
           ),
           // Add more IconButton widgets as needed
         ],

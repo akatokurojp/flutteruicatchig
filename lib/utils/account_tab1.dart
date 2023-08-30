@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagramcopy/utils/user_posts.dart';
 
-import '../feed.dart';
+import '../Working Page/feed.dart';
 
 class AccountTab1 extends StatelessWidget {
   const AccountTab1({super.key});
